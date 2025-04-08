@@ -28,9 +28,15 @@ twitter_username: jekyllrb
 github_username:  randybinondo-dev
 
 # Build settings
-theme: minima
+#theme: minima
+#remote_theme: wowthemesnet/affiliates-jekyll-theme
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
