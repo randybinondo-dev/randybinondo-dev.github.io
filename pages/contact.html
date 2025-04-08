@@ -5,8 +5,10 @@ permalink: "/contact/"
 comments: false
 ---
 
-<form action="https://formspree.io/{{site.email}}" method="POST">    
+<form action="https://api.web3forms.com/submit" method="POST">    
 <p class="mb-4">Thank you for your interest in getting in touch with us. Please send your message here. We will reply as soon as possible!</p>
+
+<input type="hidden" name="access_key" value="a69a1851-88eb-42d2-94ef-cefb9e35a390">
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Name*" required>
@@ -16,5 +18,7 @@ comments: false
 </div>
 </div>
 <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
+<!-- Honeypot Spam Protection -->
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 <input class="btn btn-dark" type="submit" value="Send">
 </form>
