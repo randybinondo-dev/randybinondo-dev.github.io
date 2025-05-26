@@ -26,6 +26,12 @@ gtag('config', '{{site.ganalytics}}');
 </script>
 {% endif %}
 
+<!-- _layouts/default.html or a specific page -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/33fe6bd0bfe80fe556c1d7fce/37714cd2df96750d0f66c9333.js");</script>
 
 
@@ -50,6 +56,10 @@ gtag('config', '{{site.ganalytics}}');
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/react-leaflet@4.2.1/dist/react-leaflet.min.js"></script>
+<style>#map { height: 100vh; }</style>
 </head>   
     
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -145,6 +155,8 @@ gtag('config', '{{site.ganalytics}}');
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>   
 <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>   
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@mapbox/polyline"></script> <!-- To decode polyline -->
     
 </body>
     
